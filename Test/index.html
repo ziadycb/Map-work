@@ -3,23 +3,44 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+* {box-sizing: border-box;}
 
-<link href="magiczoomplus/magiczoomplus.css" rel="stylesheet" type="text/css" media="screen"/>
-<script src="magiczoomplus/magiczoomplus.js" type="text/javascript"></script>
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 150px;
+  height: 150px;
+}
+</style>
+
+<script src="index.js"></script>
 
 </head>
 <body>
 
-<div class="img-zoom-container">
-  <img id="myimage" src="Map of Computer Science.png" width="700" height="500" style="float:left">
-  <div id="myresult" class="img-zoom-result" style="float:left"></div>
+<h1>Image Magnifier Glass</h1>
+
+<p>Mouse over the image:</p>
+
+<div class="img-magnifier-container">
+  <img id="myimage" src="Map of Computer Science.png" width="600" height="400">
 </div>
 
-<!-- <p>The image must be placed inside a container with relative positioning.</p>
-<p>The result can be put anywhere on the page, but must have the class name "img-zoom-result".</p>
-<p>Make sure both the image and the result have IDs. These IDs are used when a javaScript initiates the zoom effect.</p> -->
+<p>Feel free to change the strength of the magnifier glass when initiating the magnify function.</p>
 
-
+<script>
+/* Initiate Magnify Function
+with the id of the image, and the strength of the magnifier glass:*/
+magnify("myimage", 2);
+</script>
 
 </body>
 </html>
