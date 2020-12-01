@@ -113,7 +113,6 @@ function imageZoom(imgID, resultID) {
 
 function launch (ID, _ID2,_class){
 
-  var img , result;
 
  document.getElementById(_class).addEventListener("wheel", (event) => {
     const DIVIDE_AMOUNT = 4;
@@ -121,6 +120,9 @@ function launch (ID, _ID2,_class){
 
     
       zoom += event.deltaY / DIVIDE_AMOUNT;
+      if(zoom ==0)zoom=25;
+      if(zoom ==200)zoom=175;
+
     console.log(zoom);
 
 
