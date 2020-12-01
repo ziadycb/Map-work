@@ -1,3 +1,10 @@
+var script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
+
+
+
 var zoom =100;
 var x=0;
 var lens_temp;
@@ -8,13 +15,14 @@ function removeElement(elementId) {
   element.parentNode.removeChild(element);
 }
 
-function imageZoom(imgID, resultID) {
+function imageZoom(imgID, resultID ,mapID) {
 
 
     console.log(x);
-  var img, lens, result, cx, cy;
+  var img, lens, result, cx, cy,map;
   img = document.getElementById(imgID);
   result = document.getElementById(resultID);
+  map=mapID;
 
   /*create lens:*/
   lens = document.createElement("DIV");
@@ -44,6 +52,8 @@ function imageZoom(imgID, resultID) {
   /*execute a function when someone moves the cursor over the image, or the lens:*/
    lens.addEventListener("mousemove", moveLens);
    img.addEventListener("mousemove", moveLens);
+
+   map.addEventListener("mousemove", moveLens);
 
   /*to update the positions when we zoom in without moving*/
   lens.addEventListener("mouseover", moveLens);
@@ -137,3 +147,4 @@ function launch (ID, _ID2,_class){
 
   
   }
+  
