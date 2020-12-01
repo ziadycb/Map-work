@@ -1,5 +1,17 @@
+var zoom =100;
+var x=0;
+var lens_temp;
+
+function removeElement(elementId) {
+  // Removes an element from the document
+  var element = document.getElementById(elementId);
+  element.parentNode.removeChild(element);
+}
+
 function imageZoom(imgID, resultID) {
-  
+
+
+    console.log(x);
   var img, lens, result, cx, cy;
   img = document.getElementById(imgID);
   result = document.getElementById(resultID);
@@ -7,7 +19,16 @@ function imageZoom(imgID, resultID) {
   /*create lens:*/
   lens = document.createElement("DIV");
   lens.setAttribute("class", "img-zoom-lens");
+  lens.setAttribute("id", "img-zoom-lens");
 
+  if(x>0){
+  lens.style.left = lens_temp.style.left;
+  lens.style.top = lens_temp.style.top;
+  lens.style.width=zoom + "px";
+  lens.style.height=zoom + "px";
+  }
+  x++;
+  lens_temp=lens;
   /*insert lens:*/
   img.parentElement.insertBefore(lens, img);
 
@@ -19,10 +40,13 @@ function imageZoom(imgID, resultID) {
   result.style.backgroundImage = "url('" + img.src + "')";
   result.style.backgroundSize = img.width * cx + "px " + img.height * cy + "px";
 
+  
   /*execute a function when someone moves the cursor over the image, or the lens:*/
-  lens.addEventListener("mousemove", moveLens);
-  img.addEventListener("mousemove", moveLens);
+  // lens.addEventListener("mousemove", moveLens);
+  // img.addEventListener("mousemove", moveLens);
 
+  lens.addEventListener("mouseover", moveLens);
+  img.addEventListener("mouseover", moveLens);
   /*and also for touch screens:*/
   lens.addEventListener("touchmove", moveLens);
   img.addEventListener("touchmove", moveLens);
@@ -58,6 +82,7 @@ function imageZoom(imgID, resultID) {
     lens.style.left = x + "px";
     lens.style.top = y + "px";
 
+    
     /*display what the lens "sees":*/
     result.style.backgroundPosition = "-" + x * cx + "px -" + y * cy + "px";
   }
@@ -78,5 +103,27 @@ function imageZoom(imgID, resultID) {
     x = x - window.pageXOffset;
     y = y - window.pageYOffset;
     return { x: x, y: y };
+
+    
   }
 }
+
+function launch (ID, _ID2,_class){
+
+
+ document.getElementById(_class).addEventListener("wheel", (event) => {
+    const DIVIDE_AMOUNT = 4;
+    console.log(event.deltaY);
+    zoom += event.deltaY / DIVIDE_AMOUNT;
+    console.log(zoom);
+
+
+    removeElement("img-zoom-lens");
+    imageZoom(ID, _ID2);
+
+    lens_temp.style.width=zoom + "px";
+    lens_temp.style.height=zoom + "px";
+
+  });
+  
+  }

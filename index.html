@@ -13,8 +13,8 @@
   position: absolute;
   border: 1px solid #d4d4d4;
   /*set the size of the lens:*/
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
 }
 
 .img-zoom-result {
@@ -30,7 +30,7 @@
 </head>
 <body>
 <p>attempt to ruin</p>
-<div class="img-zoom-container">
+<div id="div" class="img-zoom-container">
   <img id="myimage" src="Map of Computer Science.png" width="700" height="500" style="float:left">
   <div id="myresult" class="img-zoom-result" style="float: left;"></div>
 </div>
@@ -40,6 +40,7 @@
 <p>Make sure both the image and the result have IDs. These IDs are used when a javaScript initiates the zoom effect.</p> -->
 
 <script>
+launch("myimage", "myresult","div");
 imageZoom("myimage", "myresult");
 </script>
 
