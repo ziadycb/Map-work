@@ -49,6 +49,7 @@ function imageZoom(imgID, resultID) {
   lens.addEventListener("mouseover", moveLens);
   img.addEventListener("mouseover", moveLens);
 
+
   /*and also for touch screens:*/
   lens.addEventListener("touchmove", moveLens);
   img.addEventListener("touchmove", moveLens);
@@ -116,7 +117,9 @@ function launch (ID, _ID2,_class){
  document.getElementById(_class).addEventListener("wheel", (event) => {
     const DIVIDE_AMOUNT = 4;
     console.log(event.deltaY);
-    zoom += event.deltaY / DIVIDE_AMOUNT;
+
+    
+      zoom += event.deltaY / DIVIDE_AMOUNT;
     console.log(zoom);
 
 
