@@ -44,8 +44,8 @@ function imageZoom(imgID, resultID) {
   /*execute a function when someone moves the cursor over the image, or the lens:*/
    lens.addEventListener("mousemove", moveLens);
    img.addEventListener("mousemove", moveLens);
-   
-  /*to update the positions when the we zoom in without moving*/
+
+  /*to update the positions when we zoom in without moving*/
   lens.addEventListener("mouseover", moveLens);
   img.addEventListener("mouseover", moveLens);
 
