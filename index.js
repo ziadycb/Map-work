@@ -1,10 +1,3 @@
-var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
-script.type = 'text/javascript';
-document.getElementsByTagName('head')[0].appendChild(script);
-
-
-
 var zoom =100;
 var x=0;
 var lens_temp;
@@ -52,8 +45,6 @@ function imageZoom(imgID, resultID ,mapID) {
   /*execute a function when someone moves the cursor over the image, or the lens:*/
    lens.addEventListener("mousemove", moveLens);
    img.addEventListener("mousemove", moveLens);
-
-   map.addEventListener("mousemove", moveLens);
 
   /*to update the positions when we zoom in without moving*/
   lens.addEventListener("mouseover", moveLens);

@@ -17,7 +17,7 @@
   /*set the size of the lens:*/
   width: 100px;
   height: 100px; 
-  pointer-events: none;
+  
 }
 
 .img-zoom-result {
@@ -36,7 +36,7 @@
 <body>
 <p>attempt to ruin</p>
 <div id="div" class="img-zoom-container">
-  <img id="myimage" class="myImage" usemap="#workmap" src="Map of Computer Science.png" width="600" height="400">
+  <img id="myimage" class="myImage" usemap="#workmap" src="Map of Computer Science.png" width="500" height="300">
 
   <map name="workmap" id="map">
     <area target="" alt="Algo" title="Algo" href="https://themeforest.net/category/site-templates/technology/computer" coords="4,138,75,136,82,164,81,184,83,208,89,220,85,232,6,230" shape="poly">
@@ -45,9 +45,7 @@
   <div id="myresult" class="img-zoom-result"></div>
 </div>
 
-<!-- <p>The image must be placed inside a container with relative positioning.</p>
-<p>The result can be put anywhere on the page, but must have the class name "img-zoom-result".</p>
-<p>Make sure both the image and the result have IDs. These IDs are used when a javaScript initiates the zoom effect.</p> -->
+
 
 <script>
 launch("myimage", "myresult","div","map");
