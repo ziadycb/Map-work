@@ -2,6 +2,8 @@
 
 .img-zoom-container {
   position: relative;
+  margin-left: 30%;
+  margin-top: 50px;
 }
 
 .img-zoom-lens {
@@ -17,4 +19,5 @@
   /*set the size of the result div:*/
   width: 200px;
   height: 200px;
+  margin-left :19%;
 }
