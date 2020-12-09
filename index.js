@@ -16,8 +16,8 @@ function removeElement(elementId) {
 
 
 function imageZoom(imgID, resultID ,mapID) {
-
   
+
 if (disabler==0){
   box_temp= document.getElementById("myresult");
     console.log(x);
@@ -150,7 +150,8 @@ function launch (ID, _ID2,_class,mapID){
 }
 
 function myFunction() {
-  
+    // button.parentElement.insertBefore(map, button);
+    img.setAttribute("usemap","#workmap");
     removeElement("img-zoom-lens");
     document.getElementById("myresult").style.display = "none";
     disabler=1;
@@ -160,6 +161,7 @@ function myFunction() {
 
   function myFunction2() {
     if(disabler==1){
+      img.setAttribute("usemap","NO");
       disabler=0;
       document.getElementById("myresult").style.display = "block";
       imageZoom("myimage", "myresult");
@@ -182,6 +184,8 @@ function myFunction() {
         btnEle.html("Explore image");
       }
       else {
+        
+        
         myFunction2();
         btnEle.html("Explore Site");
       }

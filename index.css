@@ -1,13 +1,14 @@
 * {box-sizing: border-box;}
 
+
 .img-zoom-container {
   position: relative;
-  margin-left: 30%;
   margin-top: 50px;
 }
 
 
 .img-zoom-lens {
+  margin-left:21em;
   position: absolute;
   border: 1px solid #d4d4d4;
   /*set the size of the lens:*/
@@ -20,10 +21,39 @@
   /*set the size of the result div:*/
   width: 200px;
   height: 200px;
-  margin-left :19%;
+  margin-left:5em;
+  margin-top :10em;
+  float: left;
+  
   
 }
 
 .map {
   position: relative;
 }
+
+#btnSubmit {
+  
+  margin-left:42em;
+  margin-top :1%;
+  width: 200px;
+}
+
+#myimage{
+  margin-left:21em;
+  float: left;
+}
+
+@media screen and (max-width: 1432px) {
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 200px;
+  height: 200px;
+  margin-left:42em;
+  margin-top :1%;
+  
+}
+}
+
