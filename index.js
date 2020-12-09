@@ -1,3 +1,8 @@
+var script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
+
 var zoom =100;
 var x=0;
 var lens_temp;
@@ -121,8 +126,9 @@ if (disabler==0){
 
 function launch (ID, _ID2,_class,mapID){
 
-
+  
  document.getElementById(_class).addEventListener("wheel", (event) => {
+  if(disabler==0){
     const DIVIDE_AMOUNT = 4;
     console.log(event.deltaY);
 
@@ -133,26 +139,25 @@ function launch (ID, _ID2,_class,mapID){
 
     console.log(zoom);
 
-
+  
     removeElement("img-zoom-lens");
     imageZoom(ID, _ID2,mapID);
 
     lens_temp.style.width=zoom + "px";
     lens_temp.style.height=zoom + "px";
 
-
+  }
   });
 
-  
-  }
+}
 
 function myFunction() {
-  if(disabler==0){
+  
     removeElement("img-zoom-lens");
     document.getElementById("myresult").style.display = "none";
     disabler=1;
     console.log(disabler);
-  }
+  
   }
 
   function myFunction2() {
@@ -163,7 +168,24 @@ function myFunction() {
       lens_temp.style.width=zoom + "px";
       lens_temp.style.height=zoom + "px";
       
-      
     }
+    
   }
   
+
+  $(document).ready(function() {
+    $("#btnSubmit").click(function(e){
+      var btnEle = $(e.target);
+    
+      var state = btnEle.text();
+      
+      if (state == "Explore Site") {
+        myFunction();
+        btnEle.html("Explore image");
+      }
+      else {
+        myFunction2();
+        btnEle.html("Explore Site");
+      }
+    }); 
+});

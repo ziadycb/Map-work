@@ -4,13 +4,13 @@
 
 <link rel="stylesheet" type="text/css" href="index.css" media="screen"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
 <script src="index.js"></script>
 
 </head>
 
 <body>
-<button onclick="myFunction()">Click me!</button>
-<button onclick="myFunction2()">Click me! 2</button>
+<button id="btnSubmit" class="sliderStateChange" >Explore Site</button>
 <div id="div" class="img-zoom-container">
   <img id="myimage" class="myImage" usemap="#workmap" src="Map of Computer Science.png" width="500" height="300">
 
@@ -22,6 +22,7 @@
 </div>
 
 <!-- For the map to work diable the script -->
+
 <script>
 launch("myimage", "myresult","div","map2");
 imageZoom("myimage", "myresult");
