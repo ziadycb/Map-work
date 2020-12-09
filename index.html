@@ -7,15 +7,19 @@
 <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
 <script src="index.js"></script>
 
+<!-- For the map highlight on hover -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+
 </head>
 
 <body>
-<button id="btnSubmit" class="sliderStateChange" >Explore Site</button>
+<button id="btnSubmit" >Explore Site</button>
 <div id="div" class="img-zoom-container">
-  <img id="myimage" class="myImage" usemap="#workmap" src="Map of Computer Science.png" width="500" height="300">
+  <img id="myimage" class="map" class="myImage" usemap="#workmap" src="Map of Computer Science.png" width="500" height="300">
 
-  <map name="workmap" class="map" id="map">
-    <area id="map2" target="" alt="Algo" title="Algo" href="https://themeforest.net/category/site-templates/technology/computer" coords="4,138,75,136,82,164,81,184,83,208,89,220,85,232,6,230" shape="poly">
+  <map  name="workmap" class="map" id="map">
+    <area id="map2" class="map" target="" alt="Algo" title="Algo" href="https://themeforest.net/category/site-templates/technology/computer" coords="4,138,75,136,82,164,81,184,83,208,89,220,85,232,6,230" shape="poly">
   </map>
   
   <div id="myresult" class="img-zoom-result"></div>
