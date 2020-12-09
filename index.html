@@ -7,18 +7,23 @@
 <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
 <script src="index.js"></script>
 
-<!-- For the map highlight on hover -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+<!-- Including Bootstrap -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+ integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 
 </head>
 
 <body>
 <button id="btnSubmit" >Explore Site</button>
 <div id="div" class="img-zoom-container">
-  <img id="myimage" class="map" class="myImage" usemap="#workmap" src="Map of Computer Science.png" width="500" height="300">
+  <img id="myimage" class="myimage"  usemap="#workmap" src="Map of Computer Science.png" width="500" height="300">
 
-  <map  name="workmap" class="map" id="map">
+  <map id="map3"  name="workmap" class="map" id="map">
     <area id="map2" class="map" target="" alt="Algo" title="Algo" href="https://themeforest.net/category/site-templates/technology/computer" coords="4,138,75,136,82,164,81,184,83,208,89,220,85,232,6,230" shape="poly">
   </map>
   
