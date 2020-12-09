@@ -9,12 +9,13 @@
 </head>
 
 <body>
-<p>attempt to ruin</p>
+<button onclick="myFunction()">Click me!</button>
+<button onclick="myFunction2()">Click me! 2</button>
 <div id="div" class="img-zoom-container">
   <img id="myimage" class="myImage" usemap="#workmap" src="Map of Computer Science.png" width="500" height="300">
 
-  <map name="workmap" id="map">
-    <area target="" alt="Algo" title="Algo" href="https://themeforest.net/category/site-templates/technology/computer" coords="4,138,75,136,82,164,81,184,83,208,89,220,85,232,6,230" shape="poly">
+  <map name="workmap" class="map" id="map">
+    <area id="map2" target="" alt="Algo" title="Algo" href="https://themeforest.net/category/site-templates/technology/computer" coords="4,138,75,136,82,164,81,184,83,208,89,220,85,232,6,230" shape="poly">
   </map>
   
   <div id="myresult" class="img-zoom-result"></div>
@@ -22,7 +23,7 @@
 
 <!-- For the map to work diable the script -->
 <script>
-launch("myimage", "myresult","div","map");
+launch("myimage", "myresult","div","map2");
 imageZoom("myimage", "myresult");
 </script>
 

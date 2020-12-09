@@ -1,6 +1,9 @@
 var zoom =100;
 var x=0;
 var lens_temp;
+var disabler =0;
+var lens_temp2,box_temp;
+var img;
 
 function removeElement(elementId) {
   // Removes an element from the document
@@ -8,11 +11,14 @@ function removeElement(elementId) {
   element.parentNode.removeChild(element);
 }
 
+
 function imageZoom(imgID, resultID ,mapID) {
 
-
+  
+if (disabler==0){
+  box_temp= document.getElementById("myresult");
     console.log(x);
-  var img, lens, result, cx, cy,map;
+  var lens, result, cx, cy,map;
   img = document.getElementById(imgID);
   result = document.getElementById(resultID);
   map=mapID;
@@ -111,8 +117,9 @@ function imageZoom(imgID, resultID ,mapID) {
     
   }
 }
+}
 
-function launch (ID, _ID2,_class){
+function launch (ID, _ID2,_class,mapID){
 
 
  document.getElementById(_class).addEventListener("wheel", (event) => {
@@ -128,7 +135,7 @@ function launch (ID, _ID2,_class){
 
 
     removeElement("img-zoom-lens");
-    imageZoom(ID, _ID2);
+    imageZoom(ID, _ID2,mapID);
 
     lens_temp.style.width=zoom + "px";
     lens_temp.style.height=zoom + "px";
@@ -137,5 +144,26 @@ function launch (ID, _ID2,_class){
   });
 
   
+  }
+
+function myFunction() {
+  if(disabler==0){
+    removeElement("img-zoom-lens");
+    document.getElementById("myresult").style.display = "none";
+    disabler=1;
+    console.log(disabler);
+  }
+  }
+
+  function myFunction2() {
+    if(disabler==1){
+      disabler=0;
+      document.getElementById("myresult").style.display = "block";
+      imageZoom("myimage", "myresult");
+      lens_temp.style.width=zoom + "px";
+      lens_temp.style.height=zoom + "px";
+      
+      
+    }
   }
   
