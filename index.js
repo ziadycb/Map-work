@@ -201,5 +201,5 @@ var isMobile = false; //initiate as false
 
   console.log('Mobile device:'+isMobile);
   if(isMobile){
-    window.location.href = "/Computer-engineering/Computer-engineering.html";
+    window.location.href = "/Mobile/mobile.html";
   }
