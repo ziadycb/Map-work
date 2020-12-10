@@ -71,21 +71,16 @@ body {
   letter-spacing: -.05rem;
 }
 
-.navbar { 
-    -webkit-transition:padding 0.2s ease;
-    -moz-transition:padding 0.2s ease; 
-    -o-transition:padding 0.2s ease;        
-    transition:padding 0.2s ease;  
+
+.navbar {        
+    transition:padding 0.2s ease;
   }
+  
   
   .affix {
     padding-top: 0.2em !important;
-    padding-bottom: 0.2em !important;
-    -webkit-transition:padding 0.2s linear;
-    -moz-transition:padding 0.2s linear;  
-    -o-transition:padding 0.2s linear;         
+    padding-bottom: 0.2em !important;     
     transition:padding 0.2s linear; 
-    background-color: black;
   }
 
 /* RESPONSIVE CSS
@@ -107,5 +102,11 @@ body {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+}
+
+@media (max-width: 1432px){
+  .transp{
+    
   }
 }
