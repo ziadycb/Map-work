@@ -8,6 +8,18 @@ body {
   color: #5a5a5a;
 }
 
+.FoL
+{
+  color: darkred;
+  text-shadow: 0 0 7px darkred;
+}
+
+.FoL:hover
+{
+  color: darkred;
+  text-shadow: 0 0 7px black;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -54,13 +66,23 @@ body {
 }
 /* rtl:end:ignore */
 
+/* .bg1
+{
+    background-image: url("MB.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 
 /* Featurettes
 ------------------------- */
 
-.featurette-divider {
+.featurettedivider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-  color: darkred;
+  border-top: 3px solid darkred;
+  border-radius: 5px;
+
 }
 
 /* Thin out the marketing headings */
@@ -71,6 +93,10 @@ body {
   letter-spacing: -.05rem;
 }
 
+.bg-custom
+{
+  background-color: darkred;
+}
 
 .navbar {        
     transition:padding 0.2s ease;
