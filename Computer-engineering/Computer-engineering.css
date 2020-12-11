@@ -79,8 +79,8 @@ body {
   
   .affix {
     padding-top: 0.2em !important;
-    padding-bottom: 0.2em !important;     
-    transition:padding 0.2s linear; 
+    padding-bottom: 0.2em !important; 
+    transition:padding 0.2s linear;
   }
 
 /* RESPONSIVE CSS
@@ -102,11 +102,5 @@ body {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
-  }
-}
-
-@media (max-width: 1432px){
-  .transp{
-    
   }
 }
