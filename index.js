@@ -29,7 +29,7 @@ if (disabler==0){
 
   /*create lens:*/
   lens = document.createElement("DIV");
-  lens.setAttribute("class", "img-zoom-lens");
+  lens.setAttribute("class", "img-zoom-lens center");
   lens.setAttribute("id", "img-zoom-lens");
 
   if(x>0){
