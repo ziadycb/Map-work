@@ -1,0 +1,55 @@
+{
+  "name": "image-map-resizer",
+  "version": "1.0.10",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidjbradshaw/image-map-resizer.git"
+  },
+  "maintainers": [
+    {
+      "name": "David J. Bradshaw",
+      "email": "dave@bradshaw.net"
+    }
+  ],
+  "description": "Make the HTML image map responsive, so the map scales with the image",
+  "github": "https://github.com/davidjbradshaw/image-map-resizer",
+  "main": "js/imageMapResizer.min.js",
+  "devDependencies": {
+    "grunt": "1.0.3",
+    "grunt-bump": "0.8.x",
+    "grunt-contrib-compress": "1.4.x",
+    "grunt-contrib-jshint": "~2.0.x",
+    "grunt-contrib-qunit": "^3.1.0",
+    "grunt-contrib-uglify": "~4.x.x",
+    "grunt-contrib-watch": "~1.1.x",
+    "grunt-shell": "3.0.x",
+    "grunt-text-replace": "0.4.x",
+    "load-grunt-tasks": "~4.0.x",
+    "ms": "^2.1.1",
+    "semver": "^5.6.0",
+    "time-grunt": "^2.0.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "keywords": [
+    "imagemap",
+    "map",
+    "image",
+    "Resizing",
+    "Resizer",
+    "resize",
+    "RWD",
+    "responsive",
+    "jquery-plugin"
+  ]
+}
