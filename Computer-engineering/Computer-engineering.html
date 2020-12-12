@@ -296,6 +296,36 @@
 </footer>
 </main>
 
+<!-- This is a loading Screen-->
+<div class="loader">
+  <div class="loader-inner">
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+  </div>
+</div>
   
+<script>
+  window.onload = function() { // same as window.addEventListener('load', (event) => {
+  
+        
+        $('.loader').removeClass('loader');
+        $('.loader-inner').removeClass('loader-inner');
+        $('.loader-line').removeClass('loader-line');
+      
+  };
+</script>
 </body>
 </html>
