@@ -9,6 +9,16 @@ var img,img_temp;
 var my_jquery_function;
 document.cookie = "username=John Smith;";
 
+
+$(document).ready(function() {
+  setTimeout(function() {
+        
+        $('.loader').removeClass('loader');
+        $('.loader-inner').removeClass('loader-inner');
+        $('.loader-line').removeClass('loader-line');
+      }, 3500);
+});
+
 function removeElement(elementId) {
   // Removes an element from the document
   var element = document.getElementById(elementId);
