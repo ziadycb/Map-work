@@ -83,7 +83,7 @@
             <a class="nav-link" href="#miniCoursel">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#miniCoursel2" >Disabled</a>
+            <a class="nav-link " href="#image-map" >Disabled</a>
           </li>
         </ul>
       </div>
@@ -100,10 +100,7 @@
         <a class="nav-link" href="#services"><span>Services</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#miniCoursel"><span>Portfolio</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#miniCoursel2"><span>Our Story</span></a>
+        <a class="nav-link" href="#miniCoursel"><span>Our Story</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#image-map"><span>Contact Us</span></a>
@@ -128,8 +125,10 @@
   
 
  
-  <!-- START THE FEATURETTES -->
+  <!-- START THE FEATURES -->
 
+
+  <!-- First Division -->
 
   <div class="service-content" id="services">
     <div class="container">
@@ -202,37 +201,61 @@
                 </p>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
     </div>
   </div>
 
-  
-  
-
-  <div class=" bg2" id="miniCoursel">
-    <div class="col-md-7 order-md-2">
-      <h2 class="featurette-heading">Blugh<span class="text-muted">Yada.</span></h2>
-      <p class="lead">Test</p>
-    </div>
-    <!-- <div class="col-md-5 order-md-1">
-       <img src="MB.png" class="img-fluid" alt="Please Reload Image">
-    </div> -->
-  </div>
-
+   
+  <!-- Second Division -->
  
-  <div class="row featurette bg3" id="miniCoursel2">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Test <span class="text-muted">Fuck You.</span></h2>
-      <p class="lead">Text under title</p>
+  <div class="featurette bg2" id="miniCoursel">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="wrapper">
+            <section id="first-tab-group" class="tabgroup">
+
+              <div id="tab1">
+                <img src="../Resources/Asus.png" alt="Image could not load" />
+                <p>
+                  Test1
+                </p>
+              </div>
+              <div id="tab2">
+                <img src="../Resources/RAMs.png" alt="Image could not load" />
+                <p>
+                  Test2
+                </p>
+              </div>
+              <div id="tab3">
+                <img src="../Resources/CPU.png" alt="Image could not load"/>
+                <p>
+                  Test3
+                </p>
+              </div>
+              <div id="tab4">
+                <img src="../Resources/Cooler.png" alt="Image could not load"/>
+                <p>
+                  Test4
+                </p>
+              </div>
+            </section>
+
+            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+              <li><a href="#tab1" class="active">2008 - 2014</a></li>
+              <li><a href="#tab2">2014 - 2016</a></li>
+              <li><a href="#tab3">2016 - 2019</a></li>
+              <li><a href="#tab4">2019 - Now</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- <div class="col-md-5">
-      <img src="MB.png" class="img-fluid" alt="Please Reload Image">
-    </div> -->
   </div>
+
+  <!-- Third Division -->
 
   <div class="bgx contact-content" id="image-map"> 
     <div class="row">
@@ -240,25 +263,36 @@
         <div class="d-flex justify-content-center">
           <img src="Map_of_Computer_Science_CE.png"  class="myimage"  usemap="#workmap" width="800" height="500">
         </div>
-        
-      
       </div>
     </div>
   </div>
+
+  <!-- Working of The Map - Third Division -->
 
   <map  name="workmap" class="map" id="map2">
     <area target="_blank" alt="../Theory-CS/Theory-CS.html" title="Theory CS" href="Theory-CS/Theory-CS.html" coords="1,287,17,283,96,286,115,284,125,273,187,268,219,272,272,272,288,273,336,275,387,278,413,284,452,281,466,256,465,234,488,228,544,232,555,214,549,176,549,163,534,147,534,100,548,82,535,48,488,44,447,48,413,42,395,45,356,48,287,44,149,45,1,45" shape="poly">
     <area target="_blank" alt="../Applications/Applications.html" title="Applications" href="Applications/Applications.html" coords="1,288,17,285,113,285,125,274,222,274,333,275,415,284,461,282,477,295,491,321,467,345,461,360,460,385,485,389,566,389,578,363,590,351,569,326,575,309,693,309,729,321,799,326,799,498,1,497,0,454,-1,413,-1,338,6,356" shape="poly">
   </map>
-<!-- /END THE FEATURETTES -->
+
+
+<!-- END THE FEATURES -->
 
 </div><!-- /.container -->
-<hr class="featurettedivider">
+<!-- <hr class="featurettedivider"> -->
 
 <!-- FOOTER -->
-<footer class="container">
-  <p class="float-end"><a href="#" class="FoL">Back to top</a></p>
-  <p>&copy; Project Map of CS &middot; <a href="#" class="FoL">Privacy</a> &middot; <a href="#" class="FoL">Terms</a></p>
+<footer>
+  <div class="row">
+    <div class="d-flex justify-content-center">
+      <p>&copy; Project Map of CS &middot; <a href="#" class="FoL">Privacy</a> &middot; <a href="#" class="FoL">Terms</a></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-danger">
+        <a href="#carouselExampleFade"> Back to Top</a> </button>
+    </div>
+  </div>
 </footer>
 </main>
 
