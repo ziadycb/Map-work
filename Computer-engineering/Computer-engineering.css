@@ -132,19 +132,8 @@ body {
     background-position: center center;
 } 
 
-.bg2
-{
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15vh;
-    background-image: url("../Resources/Cooler.png");
-    background-attachment: fixed;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center center;
-}
 
-.bg3
+.bg2
 {
     padding-left: 15px;
     padding-right: 15px;
@@ -190,15 +179,11 @@ section {
 }
 
 .tabs a:hover {
-  color: #ff7d27;
+  color: darkred;
 }
 
 .tabs .active {
-  border:4px solid #ff7d27;
-}
-
-.tabgroup div  {
-
+  border:4px solid darkred;
 }
 
 .tabgroup p {
@@ -406,8 +391,6 @@ footer {
     font-size: 64px;
   }
 
-  .baner-content em {
-  }
 
   .baner-content span {
     font-size: 24px;
