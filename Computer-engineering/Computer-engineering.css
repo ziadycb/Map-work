@@ -2,7 +2,6 @@
 -------------------------------------------------- */
 
 body {
-  padding-bottom: 3rem;
   color: #5a5a5a;
   height: 100%;
 }
@@ -18,6 +17,7 @@ body {
   color: darkred;
   text-shadow: 0 0 7px black;
 }
+
 /* fixed side navbar
 -------------------------------------------------- */
 
@@ -156,6 +156,64 @@ body {
     background-position: center center;
 }
 
+section {
+  background-color: transparent;
+  padding-bottom: 15px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.tabs {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tabs li {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+.tabs a {
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  text-transform:uppercase;
+  color:#fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding:10px 15px;
+  border:4px solid #fff;
+}
+
+.tabs a:hover {
+  color: #ff7d27;
+}
+
+.tabs .active {
+  border:4px solid #ff7d27;
+}
+
+.tabgroup div  {
+
+}
+
+.tabgroup p {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 25px;
+  
+}
+
+.tabgroup > div > img{
+  width: 100%;
+  height: 100%;
+}
+
+
 /* Featurettes
 ------------------------- */
 
@@ -171,6 +229,7 @@ body {
   margin: 2rem 0; /* Space out the Bootstrap <hr> more */
   border-top: 3px solid darkred;
   border-radius: 5px;
+  
 
 }
 
@@ -292,7 +351,21 @@ h4, .h4 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-
+/* FOOTER
+--------------------------*/
+footer {
+  padding-top: 8%;
+  padding-bottom: 8%;
+  background-color: black;
+}
+.btn{
+  padding: 12px;
+}
+.btn >a{
+  text-shadow: none;
+  color:white;
+  text-decoration: none;
+}
 
 
 /* RESPONSIVE CSS
