@@ -4,6 +4,7 @@
 body {
   color: #5a5a5a;
   height: 100%;
+  background-color: #000
 }
 
 .FoL
@@ -89,20 +90,17 @@ body {
 -------------------------------------------------- */
 
 /* Carousel base class */
-
 .carousel {
   margin-bottom: 4rem;
   
 }
 /* Since positioning the image, we need to help out the caption */
-
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
-
 .carousel-item {
   height: 100%;
   width: 100%;
@@ -118,13 +116,11 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-
 .marketing h2 {
   font-weight: 400;
 }
 
 /* This became useless to be refined later */
-
  .bgx
 {
     background-image: url("../Resources/Asus.jpg");
@@ -204,7 +200,7 @@ section {
 }
 
 
-/* Features
+/* Featurettes
 ------------------------- */
 
 .row
@@ -212,11 +208,10 @@ section {
   width: 100.9%;
 } 
 
-.featurettedivider
+.divider
 {
-  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
-  border-top: 3px solid darkred;
-  border-radius: 5px;
+  background-color: darkred;
+  padding: 16px;
 }
 
 /* Thin out the marketing headings */
@@ -316,8 +311,7 @@ h4, .h4 {
   margin-bottom: 30px;
 }
 
-/* Cool Red Lines on First Division */
-
+/* Cool Red Lines */
 .service-content .service-item .line-dec {
   width: 45px;
   height: 3px;
@@ -325,8 +319,7 @@ h4, .h4 {
   margin: 20px auto 15px auto;
 }
 
-/* Map Third Division*/
-
+/* pic at the end*/
 .map {
   
   width: 100%;
@@ -346,9 +339,9 @@ footer {
   padding-bottom: 8%;
   background-color: black;
 }
-
 .btn{
   padding: 12px;
+  width: 160px;
 }
 
 .btn >a{
@@ -356,6 +349,7 @@ footer {
   color:white;
   text-decoration: none;
 }
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

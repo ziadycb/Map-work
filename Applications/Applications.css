@@ -8,15 +8,16 @@ body {
 
 .FoL
 {
-  color: darkred;
-  text-shadow: 0 0 7px darkred;
+  color: #63d6ff;
+  text-shadow: 0 0 7px #63d6ff;
 }
 
 .FoL:hover
 {
-  color: darkred;
+  color: #63d6ff;
   text-shadow: 0 0 7px black;
 }
+
 
 /* fixed side navbar
 -------------------------------------------------- */
@@ -199,12 +200,16 @@ section {
 /* Featurettes
 ------------------------- */
 
-
-
 .row
 {
   width: 100.9%;
 } 
+
+.divider
+{
+  background-color: black;
+  padding: 16px;
+}
 
 .featurettedivider
 {

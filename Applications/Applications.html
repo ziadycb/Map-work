@@ -39,24 +39,44 @@
 
   <header>
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleFade" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleFade" data-bs-slide-to="2"></li>
+      </ol>
+
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../Resources/Cybersecurity.jpg" class="d-block w-100" alt="Image did not load">
-
+            <img src="../Resources/Applications.jpg" class="d-block w-100" alt="Image did not load">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Hello</h5>
+              <p>Can you see me1</p>
+            </div>
           </div>
+
           <div class="carousel-item">
             <img src="../Resources/Vision.jpg" class="d-block w-100" alt="Image did not load">
-
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Hello</h5>
+              <p>Can you see me2</p>
+            </div>
           </div>
+
           <div class="carousel-item">
             <img src="../Resources/Cybersecurity.jpg" class="d-block w-100" alt="Image did not load">
-
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Hello</h5>
+                <p>Can you see me3</p>
+            </div>   
           </div>
         </div>
+
         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </a>
+
         <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
@@ -93,6 +113,7 @@
     </nav>
 
     <!-- NAVBAR fixed -->
+
     <div class="fixed-side-navbar">
       <ul class="nav flex-column">
         <li class="nav-item">
@@ -223,36 +244,44 @@
               <section id="first-tab-group" class="tabgroup">
 
                 <div id="tab1">
-                  <img src="../Resources/PacMan.jpg" alt="Image could not load" />
-                  <p>
-                    Test1
-                  </p>
+                  <img src="../Resources/PacMan.jpg" alt="Image could not load"/>
+                  <div>
+                    <p>
+                     PacMan
+                     <img src="../Resources/PacManGif.gif" alt="Image could not load">
+                   </p>
+                    </div>
                 </div>
+
                 <div id="tab2">
                   <img src="../Resources/Starcraft.jpg" alt="Image could not load" />
                   <p>
-                    Test2
+                    Starcraft II
+                     <img src="../Resources/StarcraftIcon.jpg" alt="Image could not load">
                   </p>
                 </div>
+
                 <div id="tab3">
                   <img src="../Resources/Witcher-III.jpg" alt="Image could not load" />
                   <p>
-                    Test3
+                    Witcher III
+                     <img src="../Resources/WitcherIcon.png" alt="Image could not load">
                   </p>
                 </div>
                 <div id="tab4">
                   <img src="../Resources/WoW-Bastion.jpg" alt="Image could not load" />
                   <p>
-                    Test4
+                    Welcome to the World of Warcraft
+                    <img src="../Resources/WoW-Icon.png" alt="Image could not load">
                   </p>
                 </div>
               </section>
 
               <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                <li><a href="#tab1" class="active">2008 - 2014</a></li>
-                <li><a href="#tab2">2014 - 2016</a></li>
-                <li><a href="#tab3">2016 - 2019</a></li>
-                <li><a href="#tab4">2019 - Now</a></li>
+                <li><a href="#tab1" class="active">Retro Age</a></li>
+                <li><a href="#tab2">RTS Age</a></li>
+                <li><a href="#tab3">RPG Age</a></li>
+                <li><a href="#tab4">MMOS Age</a></li>
               </ul>
             </div>
           </div>
@@ -288,25 +317,28 @@
     <!-- END THE FEATURES -->
 
     </div><!-- /.container -->
-    <!-- <hr class="featurettedivider"> -->
+    
+    <div class="row divider"></div>
 
     <!-- FOOTER -->
+
     <footer>
       <div class="row">
         <div class="d-flex justify-content-center">
-          <p>&copy; Project Map of CS</p>
+          <p>&copy; Project Map of CS &middot; <a href="#" class="FoL">Privacy</a> &middot; <a href="#" class="FoL">Terms</a></p>
         </div>
       </div>
       <div class="row">
         <div class="d-flex justify-content-center">
-          <button type="button" class="btn btn-primary">
-            <a href="#carouselExampleFade"> Back to Top</a> </button>
+          <a class="btn btn-primary" href="#carouselExampleFade" role="button">Back To Top</a>
         </div>
       </div>
     </footer>
+
   </main>
 
 <!-- This is a loading Screen-->
+
 <div class="loader">
   <div class="loader-inner">
     <div class="loader-line-wrap">
@@ -326,8 +358,8 @@
     </div>
   </div>
 </div>
-  
-<script>
+
+<script> 
   window.onload = function() { // same as window.addEventListener('load', (event) => {
     
         
