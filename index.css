@@ -1,5 +1,6 @@
 * {box-sizing: border-box;}
-
+html, body {margin: 0; height: 565px; overflow: hidden}
+div.wrap {height:100%; overflow:hidden;}
 #bgvid { 
   position: fixed;
   top: 50%;
