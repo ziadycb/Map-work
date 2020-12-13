@@ -4,7 +4,8 @@
 body {
   color: #5a5a5a;
   height: 100%;
-  background-color: #000
+  background-color: #000;
+  
 }
 
 .FoL
@@ -19,13 +20,20 @@ body {
   text-shadow: 0 0 7px black;
 }
 
-.carousel-indicators>li
-{
-  padding: 6px;
-  border-radius: 100%;
-  width:0;
-  height:0;
-  margin: 10px;
+
+/* Hiding scrollbar
+-------------------------------------------------- */
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
 }
 
 /* fixed side navbar
@@ -120,6 +128,14 @@ body {
   background-attachment: fixed;
 }
 
+.carousel-indicators>li
+{
+  padding: 6px;
+  border-radius: 100%;
+  width:0;
+  height:0;
+  margin: 10px;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -357,6 +373,11 @@ footer {
   text-shadow: none;
   color:white;
   text-decoration: none;
+}
+
+.btn-danger {
+  background-color: darkred;
+  border: darkred;
 }
 
 

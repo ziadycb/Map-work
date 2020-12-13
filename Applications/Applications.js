@@ -43,7 +43,6 @@ jQuery(document).ready(function ($) {
   });
 
 
-  $("#image-map").mapper();
 });
 
 $(document).ready(function () {
