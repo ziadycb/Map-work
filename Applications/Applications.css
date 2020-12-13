@@ -121,7 +121,7 @@ body {
 /* Background image  */
  .bgx
 {
-    background-image: url("../Resources/Asus.jpg");
+    background-image: url("../Resources/AugReal.jpg");
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15vh;
@@ -205,11 +205,6 @@ section {
   width: 100.9%;
 } 
 
-.divider
-{
-  background-color: black;
-  padding: 16px;
-}
 
 .featurettedivider
 {
