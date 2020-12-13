@@ -32,32 +32,31 @@ body {
   
 }
 
-.fixed-side-navbar:hover {
-  background: transparent;
-}
 
 .fixed-side-navbar .nav > li a span {
+  
   display: none;
-  -webkit-transition: all .2s;
-  transition: all .2s;
 }
 
 .fixed-side-navbar:hover .nav > li > a > span {
+  transition: 0.4s;
   color: white;
   display: block;
-  background-color: darkred;
+  background-color: darkblue;
+  width: 100px;
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
   padding: 2px 12px;
   border-radius: 7px;
 }
+
 .nav>li {
   position: relative;
   display: block;
 }
 .fixed-side-navbar .nav > li a {
-  color: #fff;
+  color: transparent;
   min-height: 32px;
   background: transparent;
   padding: 5px 45px 5px;
@@ -74,12 +73,11 @@ body {
   height: 10px;
   border-radius: 10px;
   background: rgba(250, 250, 250, 0.75);
-  -webkit-transform: scale(0.6);
-          transform: scale(0.6);
+  transform: scale(0.6);
 }
 
 .fixed-side-navbar .nav > li a:hover > span {
-  color: black;
+  color: gray;
   display: block;
 }
 
@@ -91,7 +89,7 @@ body {
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
-  
+  height: 100%;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -105,7 +103,7 @@ body {
   width: 100%;
 }
 
-.carousel-item > image
+.carousel-item > im
 {
   background-attachment: fixed;
 }
@@ -119,10 +117,10 @@ body {
   font-weight: 400;
 }
 
-/* This became useless to be refined later */
+/* Background image  */
  .bgx
 {
-    background-image: url("../Resources/Asus.png");
+    background-image: url("../Resources/Asus.jpg");
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15vh;
@@ -138,7 +136,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15vh;
-    background-image: url("../Resources/GameCoding.png");
+    background-image: url("../Resources/GameCoding.jpg");
     background-attachment: fixed;
     min-height: 100vh;
     background-size: cover;
@@ -146,7 +144,6 @@ body {
 }
 
 section {
-  background-color: transparent;
   padding-bottom: 15px;
 }
 
@@ -250,7 +247,7 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15vh;
-  background-image: url("../Resources/AI.png");
+  background-image: url("../Resources/AI.jpg");
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
@@ -345,6 +342,8 @@ footer {
 }
 .btn{
   padding: 12px;
+  width: 160px;
+  
 }
 .btn >a{
   text-shadow: none;
@@ -430,4 +429,100 @@ footer {
   .container {
     max-width: 1170px;
   }
+}
+
+/*This is the loader CSS  */
+
+.loader {
+  background: #000;
+  background: radial-gradient(#2c0a46, #001f42);
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+}
+
+.loader-inner {
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+
+.loader-line-wrap {
+  animation: 
+  spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+;
+  box-sizing: border-box;
+  height: 50px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform-origin: 50% 100%;
+  width: 100px;
+}
+.loader-line {
+  border: 4px solid transparent;
+  border-radius: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+  border-color: #000f6d;
+  height: 90px;
+  width: 90px;
+  top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+  border-color: #dd06a1;
+  height: 76px;
+  width: 76px;
+  top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+  border-color: #20537f;
+  height: 62px;
+  width: 62px;
+  top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+  border-color: #63d6ff;
+  height: 48px;
+  width: 48px;
+  top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+  border-color: hsl(240, 80%, 60%);
+  height: 34px;
+  width: 34px;
+  top: 35px;
+}
+
+@keyframes spin {
+  0%, 15% {
+  transform: rotate(0);
+}
+100% {
+  transform: rotate(360deg);
+}
 }
