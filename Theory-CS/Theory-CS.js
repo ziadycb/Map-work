@@ -43,7 +43,6 @@ function detectMob() {
     });
   
   
-    $("#image-map").mapper();
   });
   
   $(document).ready(function () {

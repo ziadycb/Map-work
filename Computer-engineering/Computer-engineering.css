@@ -19,6 +19,15 @@ body {
   text-shadow: 0 0 7px black;
 }
 
+.carousel-indicators>li
+{
+  padding: 6px;
+  border-radius: 100%;
+  width:0;
+  height:0;
+  margin: 10px;
+}
+
 /* fixed side navbar
 -------------------------------------------------- */
 
