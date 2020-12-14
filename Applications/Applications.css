@@ -405,7 +405,6 @@ footer {
 }
 
 @media (max-width: 767px){
-  
   .baner-content {
     padding-top: 30vh;
   }
@@ -431,7 +430,7 @@ footer {
   .service-content .left-text .line-dec {
     width: 45px;
     height: 3px;
-    background-color: red;
+    background-color: blue;
     margin: 20px auto 20px auto;
   }
 

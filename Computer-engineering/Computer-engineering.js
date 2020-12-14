@@ -34,4 +34,8 @@ $(window).scroll(function() {
         $(target).show();
       
     })
+    if($(window).width() < 767){
+      $(".bgx").empty();
+      $(".bgx").remove();
+    }
   });

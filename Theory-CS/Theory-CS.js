@@ -42,7 +42,10 @@ function detectMob() {
   
     });
   
-  
+    if($(window).width() < 767){
+      $(".bgx").empty();
+      $(".bgx").remove();
+    }
   });
   
   $(document).ready(function () {

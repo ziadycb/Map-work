@@ -42,6 +42,10 @@ jQuery(document).ready(function ($) {
 
   });
 
+  if($(window).width() < 767){
+    $(".bgx").empty();
+    $(".bgx").remove();
+  }
 
 });
 
@@ -55,3 +59,7 @@ $(document).ready(function () {
 });
 
 console.log(window.location.pathname + window.location.hash);
+
+
+
+
