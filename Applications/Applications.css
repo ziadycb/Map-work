@@ -230,15 +230,6 @@ section {
 } 
 
 
-.featurettedivider
-{
-  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
-  border-top: 3px solid #011a46;
-  border-radius: 5px;
-  
-
-}
-
 /* Thin out the marketing headings */
 .featurette-heading
 {
